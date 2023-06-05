@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+   
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+	<style type="text/css">
+
+	.main{
+			background-color: grey;
+			height: 50px;
+		}
+        
+      .a img {
+    vertical-align: middle;
+}  
+
+    .a{ 
+    	
+    	display: inline-block;
+    	 width: 50%;
+        height: 70px;
+    	text-align: left;
+    	padding-left:0px;
+        padding-top: 12px;
+
+    
+     }
+    .a a{
+    	font-size:20px;
+    	margin: 0px;
+        }
+    .b{
+    	
+    	display: inline-block;
+    	width: 49%;
+    	font-size: 20px;
+    	text-align: right;
+    	background-color: grey;
+      }
+    .b a{
+    	background-color: white;
+    	border:1px solid red;
+    	margin: 8px;
+        border-radius: 100%;
+        padding: 5px;
+        }
+    .main1{
+    	background-color: #eddcdc;
+    	height: 60px;
+    	margin: 0px;
+    	padding: 0px;
+    	margin-bottom: 0px;
+
+         }
+    .c{
+    	display: inline-block;
+    	width: 50%;
+    	margin:0px;
+    	padding:10px 0px 0px 0px; 
+      }
+
+    .d{
+
+    	display: inline-block;
+    	width: 49%;
+        text-align: right;
+        vertical-align: top;
+        padding-top: 5px;
+      }
+      .d ul{
+        margin: 15px 0px 0px 0px;
+      }
+   .d li {
+    list-style-type: none;
+    display: inline-block;
+    font-size: 16px;
+    padding: 0px 5px 0px 15px;
+
+        }
+    .e{
+     position: absolute;
+     top: 30%;
+     margin: 0px;
+     width: 100%;
+     
+      }
+    .e h1{
+        color: white;
+        font-family: 'Readex Pro', sans-serif;
+        font-style: semi bold;
+        font-weight: 600px;
+        font-size: 50px;
+        text-transform: uppercase;
+        margin: 10px;
+         }
+    .e p{
+        color: white;
+        font-size: 20px;
+        margin-bottom: 30px;
+        padding-left: 10px;
+        font-family: 'Roboto Slab', serif;
+        font-style: regular;
+        font-weight: 400px;
+       
+      }
+    .e a{
+        background-color:blue;
+        color: white;
+        font-size: 25px;
+        margin: 10px;
+        border: 1px solid none;
+        border-radius: 5px;
+        text-decoration: none;
+        padding: 10px;
+
+        }
+        .e a:hover{
+            background-color:red;
+                  } 
+    .e1{
+        width:90%;
+        margin:0 auto;
+       }
+
+
+       .ovlay::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left:0;
+       opacity:0.5;
+       background-color: grey;
+
+       }
+       .overlay{
+        position: relative;
+       }
+       .overlay:hover ::before{
+        opacity: 0.5;
+       }
+
+
+
+       .main1:after{
+         content: '';
+         width: 100%;
+         height: 100%;
+         position:absolute;
+         top: 0;
+         left: 0;
+         opacity: 0;
+         background-color:#bd4b09;
+
+       }
+       .main1{
+        position:relative;
+       }
+
+       .main1:hover:after{
+           opacity: 0.5;
+         } 
+
+       .main:before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top:0;
+        left:0;
+        opacity:0;
+        background-color:yellow;
+
+       }
+
+       .main{
+        position: relative;
+       }
+
+       .main:hover:before{
+        opacity: 0.5;
+       }
+
+      
+
+
+    .container{
+        width:1200;
+        margin: auto;
+        padding: 10px;
+        background-color: #b3d7e5;
+    }
+    h2{
+        font-size: 20px;
+        color: blue;
+        text-align: center;
+    }
+    p{
+        font-size: 20px;
+        color:black;
+        text-align: center;
+    }
+    .block{
+        display:inline-block;
+        width:25%;       
+        margin: 0px 10px 0px 10px;
+        margin-left: 50px;
+        margin-top: 80px;
+        margin-bottom: 80px;
+       /* transition-property: background;
+        transition-duration: 1s;
+        transition-timing-function: linear;
+        transition-delay: 1s;
+        background-color: none;
+*/
+
+    }
+    .block1{
+        display: inline-block;
+        width: 25%;       
+        margin: 0px 10px 0px 10px;
+    }
+    .block2{
+        display: inline-block;
+        width: 25%;
+        margin: 0px 10px 0px 10px       
+    }
+
+
+    .block:hover{
+        background-color: white;
+        box-shadow: 1px 1px 74px slategrey;
+    }
+    .block1:hover{
+        background-color: white;
+        box-shadow: 1px 1px 74px slategrey;   
+
+    }
+
+    .block2:hover{
+        background-color:white;
+        box-shadow: 1px 1px 74px slategrey;
+    
+    }
+
+
+    .xyz h1{
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        background-color: blue;
+        width: 100px;
+        margin: auto;
+        border-radius: 10px;
+     }
+
+     .i{
+        width: 200px;   
+        position: relative;
+        display: inline-block;
+       
+     }
+     .g:hover  img{
+          border: 2px solid white;
+          outline: 2px solid white;
+          outline-offset: -15px;
+
+     }
+
+
+
+     .h {
+         transform:translate(-50%,-50%);
+         position: absolute;
+         top: 50%;
+         left: 50%;
+
+       }
+
+
+     .g img{
+        width: 100%;
+        height: 525px;
+        transition: outline-offset 0.20s linear;
+        outline-offset: 0;
+         }
+         .i p{
+            transition: outline-offset 0.20s linear;
+            outline-offset: 0;
+
+         }
+
+     
+     .i:hover p{
+             border:2px solid white;
+             outline: 2px solid white;
+             outline-offset: 15px;
+             background-color: white;
+            }
+
+     .j img{
+         width: 100%;
+         height: 250px;
+         transition: outline-offset 0.20s linear;
+         outline-offset: 0; 
+
+          }
+
+      .j:hover img{
+            border: 2px solid white;
+            outline: 2px solid white;
+            outline-offset: -15px;
+
+      }    
+
+
+     .k{
+         transform: translate(-50%,-50%);
+         position: absolute;
+        top: 50%;
+        left: 50%;
+        font-size: 20px;
+      }
+
+      .l{
+        position: relative;
+        width: 200px;
+        display: inline-block;
+
+
+     }
+
+     .l p{
+        transition: outline-offset 0.20s linear;
+        outline-offset: 0;
+     }
+
+     .l:hover p{
+         border:2px solid white;
+         outline: 2px solid white;
+         outline-offset: 15px;
+         background-color: white;
+     }
+
+   .f{
+        text-align: center;
+     }
+
+      .i{
+        width: 33.33%;
+    position: relative;
+    display: inline-block;
+    }
+
+    
+    
+    .main_I {
+    width: 65.66%;
+    display: inline-block;
+}
+
+  .l {
+    position: relative;
+    width: 45%;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+ .p11{
+    width: 50%;
+    margin: auto;
+
+    margin-bottom: 30px;
+    }
+
+
+   .main123456{
+            position: relative;
+            padding:50px 0px 50px 0px;
+        }
+        .c123{
+            /*width: 200px;
+            height: 500px;*/
+        }
+        .c123 img{
+            width: 99%;
+            height: 500px;
+        }
+        .c456{
+            transform: translate(-15%,-60%);
+            top: 50%;
+            left: 56%;
+            position: absolute;
+            text-align: justify;
+        }
+        .c456 p{
+            padding-bottom: 20px;
+            color: white;
+            text-align: justify;
+        }
+        .c456 a{
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            padding: 10px 10px 10px 0px;
+            font-size: 20px;
+            text-decoration: none;
+        }
+       
+        .ff-12{
+            background-color:#c5a6a61f;
+            width: 48%;
+            height: 310px;
+            position: relative;
+            border: 2px solid #0183ff;
+            display: inline-block;
+            margin-right: 25px;
+
+        }
+        .ff1{
+            position: absolute;
+            transform: translate(120%,20%);
+            top:0;
+            left:0;
+           }
+       .ff1 img{
+             border: 1px solid white;
+             border-radius: 50%;
+
+        }
+        
+        .ff2{
+            position: absolute;
+            transform: translate(0%,135%);
+            top:0;
+            left:0;
+            text-align: center;
+
+        }
+
+
+        .fm12 button{
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+            font-size: 20px;
+            margin: 0px 0px 0px 55px;
+            transition: all 0.5s ease;
+        }
+        .fm12 button:hover{
+            background-color: darkred;
+        }
+        .fm1{
+         background-image: url(paint5.jpg);
+         background-repeat: no-repeat;
+         width:100%;
+         background-size: cover;
+        
+
+        }
+        .fm123{
+            display: inline-block;
+            width: 48%;
+           vertical-align: top;
+        }
+
+  .contain{
+    width: 90%;
+    margin: auto;
+  }
+.fm1 input{
+            background-color: transparent;
+            border: 2px solid white;
+
+
+        }
+        .agent{
+        width: 100%;
+        background-color: #e0dadaa6;
+        margin-top: 50px;
+
+    }
+    .footer{
+        display:inline-block;
+        width: 100%;
+        margin: 25px 0px 0px 0px;
+        padding: 0px 0px 13px 66px;
+        
+    }
+    .foot1 {
+    display: inline-block;
+    width: 30%;
+
+
+  }
+  .foot1 p{
+    text-align:justify;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .foot2 {
+    display:inline-block;
+    width: 18%;
+    list-style-type: none;
+    vertical-align: top;
+    font-family: 'Ubuntu', sans-serif;
+    
+  }
+  .foot2 li{
+    display: block;
+    background-color:none;
+    margin: 4px 0px 0px 0px;
+    padding: 5px;
+    
+  }
+  .foot2 h2{
+    color: black;
+    text-transform: uppercase;
+    font-style: bold;
+    font-weight: 900;
+  }
+  .foot3{
+    display: inline-block;
+    width: 25%;
+    vertical-align: top;
+    font-family: 'Ubuntu', sans-serif;
+
+  }
+  .foot3 h2{
+     font-size: 20px;
+    color: black;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .foot3 p{
+    text-align: start;
+     font-family: 'Ubuntu', sans-serif;
+     font-size: 19px;
+
+  }
+
+
+
+	<title>sssc paints practice</title>
+
+	</style>
+
+
+</head>
+<body>
+
+	<div class="main"> 
+        <div class="e1">
+	       <div class="a">
+                 <img src="envelop.png" alt="image">
+                 <a href="sscpaints2016@gmail.com" target="_self">sscpaints2016@gmail.com</a>
+          </div>
+
+
+          <div class="b">
+                 <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                 <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                 <a href="https://myaccount.google.com/intro/signing-in-to-google"
+                   target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                 <a href="https://www.linkedin.com/login" target="_blank"> <i class="fa fa-linkedin" aria-hidden="true"></i></a>
+         </div>
+         </div>
+    </div>
+
+
+
+    <div class="main1">
+
+           <div class="e1">
+    	    <div class="c"> 
+    	         <img src="logo.png" alt="image">
+    	   </div>
+    	   <div class="d">
+    		     <ul>
+    			     <li>HOME</li>
+    			     <li>ABOUT US</li>
+    			     <li>CONTACT US</li>
+    			     <li>GALLARY</li>
+  		        </ul>
+    	  </div>
+          </div>
+    </div>
+
+
+
+
+    <div >
+    <div class="overlay"> 
+        <div class="ovlay">
+              <div>
+                 <img src="banner.jpg" height="500px" width="100%">
+              </div>
+       </div>
+            <div class="e">
+                <div class="e1">
+                    <h1>paint and decoration--2 </h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of apage when looking at its layout.</p>
+                   <a href="#">GET STARTED</a>
+               </div>
+
+            </div>
+            
+            
+        </div>
+</div>
+
+
+
+   
+  
+
+   <div class="container xyz">
+           <div class="block">
+                <h1><i class="fa fa-flask" aria-hidden="true"></i></h1>
+                <h2>Quality</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words</p>
+          </div>
+ 
+ 
+         <div class="block1">
+              <h1><i class="fa fa-paint-brush" aria-hidden="true"></i></h1> 
+              <h2>Color Visualiser</h2>
+              <p> There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in som e form, by injected humour, or randomised words</p>
+        </div>
+
+       <div class="block2"> 
+            <h1><i class="fa fa-industry" aria-hidden="true"></i></h1>
+            <h2>Corporate Market</h2>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.</p>
+       </div>
+</div>
+      
+ <div class="contain">
+      <div class="f">
+    <h1>OUR PRODUCTS</h1>
+    <p class="p11">Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+<div class="main_i">
+     
+  <div class="i">
+       <div class="g">
+    <img src="paint1.jpg">
+      </div>
+
+      <div class="h">
+    <p>comercial <br>painting</p>
+      </div>
+  </div>
+
+
+<div class="main_I">
+  <div class="l">
+        <div class="j">
+        <img src="paint2.jpg">
+        </div>
+        <div class="k">
+        <p>"comercial<br> painting"</p>
+        </div>
+
+
+  </div>
+  <div class="l">
+        <div class="j">
+        <img src="paint2.jpg">
+        </div>
+        <div class="k">
+        <p>"comercial<br> painting"</p>
+        </div>
+
+
+  </div>
+  <div class="l">
+        <div class="j">
+        <img src="paint2.jpg">
+        </div>
+        <div class="k">
+        <p>"comercial<br> painting"</p>
+        </div>
+
+
+  </div><div class="l">
+        <div class="j">
+        <img src="paint2.jpg">
+        </div>
+        <div class="k">
+        <p>"comercial<br> painting"</p>
+        </div>
+
+
+  </div>
+  </div>
+</div>
+ </div>       
+
+    
+
+</div>
+
+<style type="text/css">
+   
+</style>
+
+
+<div class="main123456">
+
+         <div class="c123">
+            <img src="paint3.jpg">
+
+        </div>
+    <div class="c456">
+          <h1>welcome</h1>
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+             consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+             proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+             <a href="#">GET STARTED</a>
+    </div>
+</div>
+
+<div class="ff-12">
+     <div class="ff1">
+         <img src="paint4.jpg">
+     </div>
+     <div class="ff2">
+         <p>Vtae sodales aliq uam morbi non sem lacus port mollis. Nunc condime tum metus eud molest sed consectetuer.</p>
+         <h4>jone doe abc company</h4>
+     </div>
+    </div>
+
+  
+   <div class="fm123">
+    <div class="fm1">
+
+    <form>
+    <input type="text" placeholder="first name" name="f_name" width="45%" style="width:35%; height: 30px;margin: 30px 0px 0px 55px;">
+    <input type="text" placeholder="last name" name="l_name"  style="width:35%; height:30px; margin: 30px 50px 0px 20px;"><br><br>   
+    <input type="email" placeholder=" yourE-mail" name="email" style="width:35%; height:30px;margin: 10px 0px 0px 55px;">
+    <input type="number" placeholder="phone number" name="number"  style="width:35%; height:30px; margin:10px 55px 0px 20px"><br><br>
+    <textarea placeholder="message" style="width:76%; height:65px;margin: 20px 0px 0px 55px; background-color: transparent; border: 2px solid white;"></textarea> <br><br>
+
+    <div class="fm12">
+  <!--   <input type="submit" name="submit" style="background-color: blue;color: white; border-radius:5px;font-size: 20px;" class="btn_sub"> -->
+        
+    <button>submit</button>
+    </div>  
+
+
+    </form>
+    </div>
+</div>
+
+<div class="agent">
+    
+   <div class="footer">
+    <div class="foot1">
+        <img src="logo.png">
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco labor.</p>
+        
+    </div>
+
+    <div class="foot2">
+        <h2>OUR SERVICES</h2>
+        <ul>
+            <li>quality</li>
+            <li>visualisr</li>
+            <li>corporate market</li>
+            <li>wood finished</li>
+        </ul>
+       
+    </div>
+
+    <div class="foot2">
+        
+   <h2>Quick  Links</h2>
+   <ul>
+       <li>home</li>
+        <li>about us</li>
+         <li>products</li>
+          <li>inquiry</li>
+           <li>contact us</li>
+   </ul>
+   
+    </div>
+    <div class="foot3">
+        
+    <h2>INFO</h2>
+    <p>Address: 34, Sadbhav Ind Park,<br>
+      Dhamatwan Undrel Road,<br>
+     Dhamatwan,<br>
+     Ahmedabad-382435<br><br><br>
+
+     Tel:9898047936<br>
+     Email:<br> sscpaints2016@gmail.com</p>
+
+    </div>
+</div>
+</div>
+
+<div class="end">
+    <p>Copyright 2017-18 by ssc paint. All Rights Reserved</p>
+    <a href="#">DesignnCoding</a>
+</div>
+   <style type="text/css">
+
+      .end{
+        text-align: center;
+        background-color: grey;
+      }
+       
+       .end p{
+        display: inline-block;
+       margin-top: 9px;
+       }
+       .end a{
+        display: inline;
+        background-color:none;
+        color: blue;
+        border: none;
+        padding: 0px;
+       }
+   </style>
+
+
+
+ 
+</body>
+</html>
